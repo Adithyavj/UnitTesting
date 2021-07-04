@@ -50,6 +50,7 @@ namespace DemoLibrary.Tests
         {
             // Arrange
             double expected = 0;
+
             // Act
             double actual = Calculator.Divide(15, 0);
 
