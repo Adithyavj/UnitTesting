@@ -85,6 +85,11 @@
       <Name>DemoLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+	<ItemGroup>
+		<Content Include="PersonText.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
   <ItemGroup>
     <Content Include="PersonText.txt" />
   </ItemGroup>
