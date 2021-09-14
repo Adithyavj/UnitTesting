@@ -37,7 +37,7 @@ namespace DemoLibrary
                 output.Add($"{ user.FirstName }, { user.LastName }");
             }
 
-            return output;
+            return output; 
         }
 
         public static List<PersonModel> GetAllPeople()
