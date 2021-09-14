@@ -25,6 +25,14 @@ namespace DemoLibrary
 
         public static void AddPersonToPeopleList(List<PersonModel> people, PersonModel person)
         {
+            if (string.IsNullOrWhiteSpace(person.FirstName))
+            {
+                throw new ArgumentException("You passed in an invalid parameter", "FirstName");
+            }
+            if (string.IsNullOrWhiteSpace(person.LastName))
+            {
+                throw new ArgumentException("You passed in an invalid parameter", "LastName");
+            }
             people.Add(person);
         }
 
